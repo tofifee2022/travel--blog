@@ -2,12 +2,7 @@
   background-color: $color;
 }
 @mixin darkBgImage($img) {
-  &:hover {
-    background: linear-gradient(rgba(22, 22, 22, 0.6)),
-      url($img) no-repeat center / cover;
-  }
-  background: linear-gradient(rgba(22, 22, 22, 0.8)),
-    url($img) no-repeat center / cover;
+  background: url($img) no-repeat center / cover;
 }
 
 @mixin resetProps {
