@@ -1,187 +1,188 @@
 .main {
-	@include flexCenter;
-	width: 100vw;
-	max-width: 1600px;
-	margin: 0 auto;
+  @include flexCenter;
+  width: 100vw;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .articles__container {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(12, 1fr);
-	grid-column-gap: 50px;
-	grid-row-gap: 30px;
-	height: 150vh;
-	width: 100%;
-	margin: 0 5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  height: 150vh;
+  width: 100%;
+  margin: 0 5rem 5rem;
 }
 
 .articles__title {
-	position: relative;
-	grid-area: 1/6/2/8;
-	@include flexCenter;
-	border-bottom: 3px solid $base-color;
-	padding: 10px;
-	color: $base-color;
-	font-size: 1.5rem;
-	font-weight: 900;
-	text-transform: capitalize;
-	text-align: center;
-	&::after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		top: 100%;
-		left: -50%;
-		width: 200%;
-		height: 3px;
-		border-radius: 3px;
-		background-color: $accent-color;
-	}
-	& .title-icon__img {
-		height: 1.5rem;
-	}
+  position: relative;
+  grid-area: 1/6/2/8;
+  @include flexCenter;
+  border-bottom: 3px solid $base-color;
+  padding: 10px;
+  color: $base-color;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: -50%;
+    width: 200%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $accent-color;
+  }
+  & .title-icon__img {
+    height: 1.5rem;
+  }
 }
 
 .article {
-	position: relative;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	padding: 2rem;
-	color: $white;
-	cursor: pointer;
-	&--date {
-		position: relative;
-		font-size: 0.9rem;
-		letter-spacing: 0.1rem;
-	}
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 2rem;
+  color: $white;
+  cursor: pointer;
+
+  &--date {
+    position: relative;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .article__title {
-	margin-bottom: 1rem;
-	font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .article__media {
-	position: relative;
-	display: flex;
-	gap: 0.5rem;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
 
-	&--year {
-		margin-right: 1rem;
-	}
-	&--year::after {
-		content: '';
-		position: absolute;
-		top: calc(50% - 0.15rem);
+  &--year {
+    margin-right: 1rem;
+  }
+  &--year::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 0.15rem);
 
-		width: 0.3rem;
-		height: 0.3rem;
-		margin: 0 0.5rem;
-		border-radius: 50%;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin: 0 0.5rem;
+    border-radius: 50%;
 
-		background-color: $white;
-	}
-	&--aside {
-		color: $black;
-		font-size: 1rem;
-		line-height: 2rem;
-	}
+    background-color: $white;
+  }
+  &--aside {
+    color: $black;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 }
 
 .article__aside {
-	grid-area: 7/10/13/13;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 0 0 0 0;
-	&--title {
-		width: 60%;
-		color: $black;
-		font-size: 1rem;
-	}
+  grid-area: 7/10/13/13;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 0 0 0;
+  &--title {
+    width: 60%;
+    color: $black;
+    font-size: 1rem;
+  }
 }
 
 .article__aside__img {
-	width: 30%;
+  width: 30%;
 }
 
 .category {
-	position: relative;
-	@include flexCenter;
-	width: 6rem;
-	height: 1.5rem;
-	margin-bottom: 0.5rem;
-	padding: 0.2rem;
-	border-radius: 1rem;
-	background: linear-gradient(rgba(225, 225, 225, 0.45));
-	text-align: center;
-	&::before {
-		content: '';
-		position: absolute;
-		top: calc(50% - 0.35rem);
-		left: 5%;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-	}
+  position: relative;
+  @include flexCenter;
+  width: 6rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(225, 225, 225, 0.45));
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 0.35rem);
+    left: 5%;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+  }
 }
 
 .category--places::before {
-	@include category($blue);
+  @include category($blue);
 }
 .category--nature::before {
-	@include category($green);
+  @include category($green);
 }
 .category--culture::before {
-	@include category($yellow);
+  @include category($yellow);
 }
 .category--new {
-	display: flex;
-	justify-content: center;
-	width: 3rem;
-	height: 1rem;
-	background: $orange;
-	font-size: 0.5rem;
-	color: $white;
-	text-transform: uppercase;
-	&::before {
-		top: calc(50% - 0.2rem);
-		left: 10%;
-		width: 0.4rem;
-		height: 0.4rem;
-		@include category($white);
-	}
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  height: 1rem;
+  background: $orange;
+  font-size: 0.5rem;
+  color: $white;
+  text-transform: uppercase;
+  &::before {
+    top: calc(50% - 0.2rem);
+    left: 10%;
+    width: 0.4rem;
+    height: 0.4rem;
+    @include category($white);
+  }
 }
 
 .article--1 {
-	grid-area: 2/1/7/5;
-	@include darkBgImage('../img/photos/image1.svg');
+  grid-area: 2/1/7/5;
+  @include darkBgImage("../img/photos/image1.svg");
 }
 .article--2 {
-	grid-area: 2/5/7/9;
-	@include darkBgImage('../img/photos/image2.jpg');
+  grid-area: 2/5/7/9;
+  @include darkBgImage("../img/photos/image2.jpg");
 }
 .article--3 {
-	grid-area: 2/9/7/13;
-	@include darkBgImage('../img/photos/image3.jpg');
+  grid-area: 2/9/7/13;
+  @include darkBgImage("../img/photos/image3.jpg");
 }
 .article--4 {
-	grid-area: 7/1/10/6;
-	@include darkBgImage('../img/photos/image4.jpg');
+  grid-area: 7/1/10/6;
+  @include darkBgImage("../img/photos/image4.jpg");
 }
 .article--5 {
-	grid-area: 7/6/10/10;
-	@include darkBgImage('../img/photos/image5.jpg');
+  grid-area: 7/6/10/10;
+  @include darkBgImage("../img/photos/image5.jpg");
 }
 .article--6 {
-	grid-area: 10/1/13/5;
-	@include darkBgImage('../img/photos/image6.jpg');
+  grid-area: 10/1/13/5;
+  @include darkBgImage("../img/photos/image6.jpg");
 }
 .article--7 {
-	grid-area: 10/5/13/10;
-	@include darkBgImage('../img/photos/image7.jpg');
+  grid-area: 10/5/13/10;
+  @include darkBgImage("../img/photos/image7.jpg");
 }

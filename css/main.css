@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .nav {
@@ -284,7 +284,7 @@
 }
 
 .articles__title::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 100%;
@@ -343,7 +343,7 @@
 }
 
 .article__media--year::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 0.15rem);
   width: 0.3rem;
@@ -409,7 +409,7 @@
 }
 
 .category::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 0.35rem);
   left: 5%;
@@ -459,8 +459,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: 2/1/7/5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image1.svg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image1.svg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image1.svg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image1.svg") no-repeat center/cover;
+}
+
+.article--1:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image1.svg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image1.svg") no-repeat center/cover;
 }
 
 .article--2 {
@@ -469,8 +474,13 @@
   -ms-grid-column: 5;
   -ms-grid-column-span: 4;
   grid-area: 2/5/7/9;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image2.jpg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image2.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image2.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image2.jpg") no-repeat center/cover;
+}
+
+.article--2:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image2.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image2.jpg") no-repeat center/cover;
 }
 
 .article--3 {
@@ -479,8 +489,13 @@
   -ms-grid-column: 9;
   -ms-grid-column-span: 4;
   grid-area: 2/9/7/13;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image3.jpg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image3.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image3.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image3.jpg") no-repeat center/cover;
+}
+
+.article--3:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image3.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image3.jpg") no-repeat center/cover;
 }
 
 .article--4 {
@@ -489,8 +504,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: 7/1/10/6;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image4.jpg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image4.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image4.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image4.jpg") no-repeat center/cover;
+}
+
+.article--4:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image4.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image4.jpg") no-repeat center/cover;
 }
 
 .article--5 {
@@ -499,8 +519,13 @@
   -ms-grid-column: 6;
   -ms-grid-column-span: 4;
   grid-area: 7/6/10/10;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image5.jpg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image5.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image5.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image5.jpg") no-repeat center/cover;
+}
+
+.article--5:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image5.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image5.jpg") no-repeat center/cover;
 }
 
 .article--6 {
@@ -509,8 +534,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: 10/1/13/5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image6.jpg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image6.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image6.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image6.jpg") no-repeat center/cover;
+}
+
+.article--6:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image6.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image6.jpg") no-repeat center/cover;
 }
 
 .article--7 {
@@ -519,8 +549,13 @@
   -ms-grid-column: 5;
   -ms-grid-column-span: 5;
   grid-area: 10/5/13/10;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.65))), url("../img/photos/image7.jpg") no-repeat center/cover;
-  background: linear-gradient(rgba(22, 22, 22, 0.65)), url("../img/photos/image7.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.8))), url("../img/photos/image7.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.8)), url("../img/photos/image7.jpg") no-repeat center/cover;
+}
+
+.article--7:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6))), url("../img/photos/image7.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(22, 22, 22, 0.6)), url("../img/photos/image7.jpg") no-repeat center/cover;
 }
 
 /* ----------------------------------------------
